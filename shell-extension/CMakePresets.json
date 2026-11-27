@@ -1,0 +1,20 @@
+{
+  "version": 3,
+  "configurePresets": [
+    {
+      "name": "windows-mingw",
+      "displayName": "Windows x64 (MinGW + vcpkg)",
+      "generator": "MinGW Makefiles",
+      "binaryDir": "${sourceDir}/build",
+      "cacheVariables": {
+        "CMAKE_CXX_COMPILER": "C:/mingw64/bin/g++.exe",
+        "CMAKE_C_COMPILER": "C:/mingw64/bin/gcc.exe",
+        "CMAKE_MAKE_PROGRAM": "C:/mingw64/bin/mingw32-make.exe",
+        "CMAKE_TOOLCHAIN_FILE": "D:/vcpkg/scripts/buildsystems/vcpkg.cmake",
+        "VCPKG_TARGET_TRIPLET": "x64-mingw-static",
+        "VCPKG_HOST_TRIPLET": "x64-mingw-static",
+        "CMAKE_BUILD_TYPE": "Release"
+      }
+    }
+  ]
+}
